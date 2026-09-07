@@ -1,0 +1,2352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Docinhos da Sandra | Ubatuba</title>
+
+    <meta
+        name="description"
+        content="Docinhos da Sandra — doces finos, balinhas de brigadeiro e doces gourmet em Ubatuba."
+    >
+
+    <!-- FONTES -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Parisienne&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <style>
+
+        /* =====================================================
+           CORES DA MARCA
+        ===================================================== */
+
+        :root {
+
+            --rosa: #E85B83;
+
+            --rosa-escuro: #D94C75;
+
+            --rosa-claro: #F8CBD7;
+
+            --rosa-suave: #FDECEF;
+
+            --creme: #FFF8F3;
+
+            --creme-escuro: #F7E6DE;
+
+            --marrom: #69351F;
+
+            --marrom-claro: #8B5139;
+
+            --branco: #FFFFFF;
+
+            --texto: #76584B;
+
+            --sombra:
+                0 20px 50px rgba(105, 53, 31, 0.10);
+
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
+
+        body {
+
+            font-family: 'Poppins', sans-serif;
+
+            background: var(--creme);
+
+            color: var(--marrom);
+
+            overflow-x: hidden;
+
+        }
+
+
+        a {
+
+            text-decoration: none;
+
+            color: inherit;
+
+        }
+
+
+        img {
+
+            max-width: 100%;
+
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        header {
+
+            position: fixed;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            z-index: 999;
+
+            background:
+                rgba(255, 248, 243, 0.94);
+
+            backdrop-filter: blur(15px);
+
+            border-bottom:
+                1px solid rgba(232, 91, 131, 0.12);
+
+        }
+
+
+        .navbar {
+
+            max-width: 1200px;
+
+            height: 85px;
+
+            margin: auto;
+
+            padding: 0 25px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+        }
+
+
+        .navbar-logo img {
+
+            width: 62px;
+
+            height: 62px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+        }
+
+
+        nav {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 30px;
+
+        }
+
+
+        nav a {
+
+            font-size: 14px;
+
+            font-weight: 500;
+
+            transition: .3s;
+
+        }
+
+
+        nav a:hover {
+
+            color: var(--rosa);
+
+        }
+
+
+        .instagram-button {
+
+            background: var(--rosa);
+
+            color: white;
+
+            padding: 12px 23px;
+
+            border-radius: 30px;
+
+            font-weight: 600;
+
+            transition: .3s;
+
+        }
+
+
+        .instagram-button:hover {
+
+            background: var(--rosa-escuro);
+
+            transform: translateY(-2px);
+
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+
+            min-height: 100vh;
+
+            padding:
+                140px 7% 80px;
+
+            display: flex;
+
+            align-items: center;
+
+            position: relative;
+
+            overflow: hidden;
+
+            background:
+
+                radial-gradient(
+                    circle at 5% 20%,
+                    rgba(248,203,215,.8),
+                    transparent 25%
+                ),
+
+                radial-gradient(
+                    circle at 95% 80%,
+                    rgba(248,203,215,.7),
+                    transparent 25%
+                ),
+
+                var(--creme);
+
+        }
+
+
+        .hero-container {
+
+            width: 100%;
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 70px;
+
+            align-items: center;
+
+        }
+
+
+        .hero-text span {
+
+            color: var(--rosa);
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .hero-text h1 {
+
+            font-family:
+                'DM Serif Display',
+                serif;
+
+            font-size:
+                clamp(55px, 7vw, 90px);
+
+            line-height: .95;
+
+            margin:
+                18px 0 25px;
+
+            color: var(--marrom);
+
+        }
+
+
+        .hero-text h1 em {
+
+            font-family:
+                'Parisienne',
+                cursive;
+
+            font-weight: normal;
+
+            color: var(--rosa);
+
+            font-size: 1.1em;
+
+        }
+
+
+        .hero-text p {
+
+            max-width: 540px;
+
+            color: var(--texto);
+
+            font-size: 17px;
+
+            line-height: 1.9;
+
+            margin-bottom: 32px;
+
+        }
+
+
+        .hero-buttons {
+
+            display: flex;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+
+        }
+
+
+        .button {
+
+            padding:
+                15px 28px;
+
+            border-radius: 40px;
+
+            font-weight: 600;
+
+            transition: .3s;
+
+        }
+
+
+        .button-primary {
+
+            background: var(--rosa);
+
+            color: white;
+
+            box-shadow:
+                0 12px 30px rgba(232,91,131,.25);
+
+        }
+
+
+        .button-primary:hover {
+
+            transform:
+                translateY(-4px);
+
+        }
+
+
+        .button-secondary {
+
+            border:
+                1px solid var(--rosa);
+
+            color: var(--rosa);
+
+        }
+
+
+        .button-secondary:hover {
+
+            background:
+                var(--rosa-suave);
+
+        }
+
+
+        /* =====================================================
+           LOGO HERO
+        ===================================================== */
+
+        .hero-logo {
+
+            display: flex;
+
+            justify-content: center;
+
+        }
+
+
+        .logo-wrapper {
+
+            width:
+                min(470px, 90vw);
+
+            height:
+                min(470px, 90vw);
+
+            padding: 12px;
+
+            background: white;
+
+            border-radius: 50%;
+
+            box-shadow:
+                0 25px 70px
+                rgba(105,53,31,.14);
+
+            animation:
+                floating 5s ease-in-out infinite;
+
+        }
+
+
+        .logo-wrapper img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            border-radius: 50%;
+
+        }
+
+
+        @keyframes floating {
+
+            0%, 100% {
+
+                transform:
+                    translateY(0);
+
+            }
+
+            50% {
+
+                transform:
+                    translateY(-12px);
+
+            }
+
+        }
+
+
+        /* =====================================================
+           SEÇÕES
+        ===================================================== */
+
+        section {
+
+            padding:
+                105px 7%;
+
+        }
+
+
+        .section-header {
+
+            text-align: center;
+
+            max-width: 750px;
+
+            margin:
+                0 auto 60px;
+
+        }
+
+
+        .section-header span {
+
+            color: var(--rosa);
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .section-header h2 {
+
+            font-family:
+                'DM Serif Display',
+                serif;
+
+            font-size:
+                clamp(40px, 5vw, 60px);
+
+            line-height: 1.1;
+
+            margin-top: 12px;
+
+            color: var(--marrom);
+
+        }
+
+
+        .section-header p {
+
+            color: var(--texto);
+
+            line-height: 1.8;
+
+            margin-top: 18px;
+
+        }
+
+
+        /* =====================================================
+           SOBRE
+        ===================================================== */
+
+        .about {
+
+            background: white;
+
+        }
+
+
+        .about-container {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 70px;
+
+            align-items: center;
+
+        }
+
+
+        .about-highlight {
+
+            background:
+                var(--rosa-suave);
+
+            padding: 50px;
+
+            border-radius: 35px;
+
+            position: relative;
+
+            overflow: hidden;
+
+        }
+
+
+        .about-highlight::after {
+
+            content: "♡";
+
+            position: absolute;
+
+            right: 25px;
+
+            bottom: 0;
+
+            font-size: 110px;
+
+            color:
+                rgba(232,91,131,.12);
+
+        }
+
+
+        .about-highlight h3 {
+
+            font-family:
+                'DM Serif Display',
+                serif;
+
+            font-size: 38px;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .about-highlight p {
+
+            color: var(--texto);
+
+            line-height: 1.9;
+
+        }
+
+
+        .about-text p {
+
+            color: var(--texto);
+
+            line-height: 1.9;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .about-text strong {
+
+            color: var(--rosa);
+
+        }
+
+
+        /* =====================================================
+           DOCES
+        ===================================================== */
+
+        .products {
+
+            background: var(--creme);
+
+        }
+
+
+        .products-grid {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+
+        }
+
+
+        .product-card {
+
+            background: white;
+
+            padding: 40px 30px;
+
+            border-radius: 30px;
+
+            text-align: center;
+
+            box-shadow:
+                var(--sombra);
+
+            border:
+                1px solid transparent;
+
+            transition: .35s;
+
+        }
+
+
+        .product-card:hover {
+
+            transform:
+                translateY(-10px);
+
+            border-color:
+                var(--rosa-claro);
+
+        }
+
+
+        .product-icon {
+
+            width: 85px;
+
+            height: 85px;
+
+            margin:
+                0 auto 22px;
+
+            border-radius: 50%;
+
+            background:
+                var(--rosa-suave);
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 38px;
+
+        }
+
+
+        .product-card h3 {
+
+            font-family:
+                'DM Serif Display',
+                serif;
+
+            font-size: 29px;
+
+            margin-bottom: 12px;
+
+        }
+
+
+        .product-card p {
+
+            color: var(--texto);
+
+            line-height: 1.8;
+
+            font-size: 14px;
+
+        }
+
+
+        /* =====================================================
+           FRASE DE DESTAQUE
+        ===================================================== */
+
+        .special {
+
+            background:
+                var(--marrom);
+
+            color: white;
+
+            position: relative;
+
+            overflow: hidden;
+
+        }
+
+
+        .special-content {
+
+            max-width: 850px;
+
+            margin: auto;
+
+            text-align: center;
+
+        }
+
+
+        .special-content span {
+
+            color:
+                var(--rosa-claro);
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .special-content h2 {
+
+            font-family:
+                'DM Serif Display',
+                serif;
+
+            font-size:
+                clamp(42px, 5vw, 65px);
+
+            line-height: 1.15;
+
+            margin:
+                18px 0 20px;
+
+        }
+
+
+        .special-content p {
+
+            color:
+                #F8E6DE;
+
+            line-height: 1.9;
+
+        }
+
+
+        /* =====================================================
+           AVALIAÇÕES
+        ===================================================== */
+
+        .reviews {
+
+            background:
+                var(--creme-escuro);
+
+        }
+
+
+        .rating {
+
+            text-align: center;
+
+            margin-bottom: 50px;
+
+        }
+
+
+        .stars {
+
+            color:
+                var(--rosa);
+
+            font-size: 31px;
+
+            letter-spacing: 5px;
+
+        }
+
+
+        .rating-number {
+
+            display: block;
+
+            font-family:
+                'DM Serif Display',
+                serif;
+
+            font-size: 65px;
+
+            margin-top: 5px;
+
+        }
+
+
+        .rating-text {
+
+            color: var(--texto);
+
+        }
+
+
+        /* =====================================================
+           O COMENTÁRIO
+        ===================================================== */
+
+        .main-review {
+
+            max-width: 900px;
+
+            margin: auto;
+
+            background: white;
+
+            padding: 60px;
+
+            border-radius: 35px;
+
+            box-shadow:
+                var(--sombra);
+
+            text-align: center;
+
+            position: relative;
+
+        }
+
+
+        .review-label {
+
+            display: inline-block;
+
+            background:
+                var(--rosa-suave);
+
+            color:
+                var(--rosa);
+
+            padding:
+                8px 18px;
+
+            border-radius: 30px;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .quote {
+
+            font-family:
+                Georgia, serif;
+
+            font-size: 80px;
+
+            color:
+                var(--rosa-claro);
+
+            line-height: .7;
+
+            margin-top: 30px;
+
+        }
+
+
+        .main-review blockquote {
+
+            font-family:
+                'DM Serif Display',
+                serif;
+
+            font-size: 24px;
+
+            line-height: 1.75;
+
+            margin:
+                25px auto;
+
+            color:
+                var(--marrom);
+
+        }
+
+
+        .review-author {
+
+            color:
+                var(--rosa);
+
+            font-weight: 700;
+
+        }
+
+
+        /* =====================================================
+           OUTROS CARINHOS
+        ===================================================== */
+
+        .love-section {
+
+            background: white;
+
+        }
+
+
+        .love-grid {
+
+            max-width: 1000px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 20px;
+
+        }
+
+
+        .love-card {
+
+            padding:
+                28px 30px;
+
+            background:
+                var(--rosa-suave);
+
+            border-radius: 22px;
+
+            border-left:
+                4px solid var(--rosa);
+
+            transition: .3s;
+
+        }
+
+
+        .love-card:hover {
+
+            transform:
+                translateX(5px);
+
+        }
+
+
+        .love-card p {
+
+            font-family:
+                'DM Serif Display',
+                serif;
+
+            font-size: 20px;
+
+            line-height: 1.5;
+
+        }
+
+
+        /* =====================================================
+           INSTAGRAM
+        ===================================================== */
+
+        .instagram {
+
+            text-align: center;
+
+            background:
+                var(--creme);
+
+        }
+
+
+        .instagram-small {
+
+            color:
+                var(--rosa);
+
+            font-weight: 700;
+
+            font-size: 13px;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+
+        }
+
+
+        .instagram h2 {
+
+            font-family:
+                'DM Serif Display',
+                serif;
+
+            font-size:
+                clamp(40px, 5vw, 58px);
+
+            margin:
+                12px 0;
+
+        }
+
+
+        .instagram p {
+
+            color:
+                var(--texto);
+
+            margin-bottom: 28px;
+
+        }
+
+
+        .instagram-button-large {
+
+            display: inline-block;
+
+            background:
+                var(--rosa);
+
+            color: white;
+
+            padding:
+                15px 30px;
+
+            border-radius: 35px;
+
+            font-weight: 600;
+
+            transition: .3s;
+
+        }
+
+
+        .instagram-button-large:hover {
+
+            transform:
+                translateY(-3px);
+
+        }
+
+
+        /* =====================================================
+           CONTATO
+        ===================================================== */
+
+        .contact {
+
+            background:
+                var(--rosa-suave);
+
+        }
+
+
+        .contact-container {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            background: white;
+
+            padding: 55px;
+
+            border-radius: 35px;
+
+            box-shadow:
+                var(--sombra);
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 50px;
+
+        }
+
+
+        .contact-info h2 {
+
+            font-family:
+                'DM Serif Display',
+                serif;
+
+            font-size: 43px;
+
+            margin-bottom: 18px;
+
+        }
+
+
+        .contact-info > p {
+
+            color:
+                var(--texto);
+
+            line-height: 1.8;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .contact-item {
+
+            margin:
+                17px 0;
+
+            color:
+                var(--texto);
+
+            line-height: 1.6;
+
+        }
+
+
+        .contact-item strong {
+
+            color:
+                var(--rosa);
+
+        }
+
+
+        .contact-action {
+
+            background:
+                var(--marrom);
+
+            padding:
+                40px;
+
+            border-radius:
+                27px;
+
+            color: white;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+        }
+
+
+        .contact-action h3 {
+
+            font-family:
+                'DM Serif Display',
+                serif;
+
+            font-size: 34px;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .contact-action p {
+
+            color:
+                #F8E6DE;
+
+            line-height: 1.8;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .whatsapp-button {
+
+            display: block;
+
+            text-align: center;
+
+            background:
+                var(--rosa);
+
+            color: white;
+
+            padding:
+                15px;
+
+            border-radius:
+                30px;
+
+            font-weight: 600;
+
+            transition: .3s;
+
+        }
+
+
+        .whatsapp-button:hover {
+
+            transform:
+                translateY(-3px);
+
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            background:
+                var(--marrom);
+
+            color: white;
+
+            text-align: center;
+
+            padding:
+                45px 20px;
+
+        }
+
+
+        footer img {
+
+            width: 90px;
+
+            height: 90px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            margin-bottom: 18px;
+
+        }
+
+
+        footer h3 {
+
+            font-family:
+                'DM Serif Display',
+                serif;
+
+            font-size: 28px;
+
+        }
+
+
+        footer p {
+
+            color:
+                #F6DCD2;
+
+            font-size: 13px;
+
+            margin-top: 8px;
+
+        }
+
+
+        .footer-instagram {
+
+            display: inline-block;
+
+            margin-top: 15px;
+
+            color:
+                var(--rosa-claro);
+
+            font-weight: 600;
+
+        }
+
+
+        /* =====================================================
+           RESPONSIVIDADE
+        ===================================================== */
+
+        @media (max-width: 900px) {
+
+
+            nav a:not(.instagram-button) {
+
+                display: none;
+
+            }
+
+
+            .hero-container {
+
+                grid-template-columns: 1fr;
+
+                text-align: center;
+
+            }
+
+
+            .hero-text p {
+
+                margin-left: auto;
+
+                margin-right: auto;
+
+            }
+
+
+            .hero-buttons {
+
+                justify-content: center;
+
+            }
+
+
+            .about-container {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .products-grid {
+
+                grid-template-columns: 1fr;
+
+                max-width: 500px;
+
+            }
+
+
+            .contact-container {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+        }
+
+
+        @media (max-width: 600px) {
+
+
+            section {
+
+                padding:
+                    75px 5%;
+
+            }
+
+
+            .navbar {
+
+                padding:
+                    0 15px;
+
+            }
+
+
+            .navbar-logo img {
+
+                width: 55px;
+
+                height: 55px;
+
+            }
+
+
+            .instagram-button {
+
+                padding:
+                    10px 16px;
+
+                font-size: 12px;
+
+            }
+
+
+            .hero {
+
+                padding-top:
+                    125px;
+
+            }
+
+
+            .hero-text h1 {
+
+                font-size:
+                    55px;
+
+            }
+
+
+            .logo-wrapper {
+
+                width: 320px;
+
+                height: 320px;
+
+            }
+
+
+            .about-highlight {
+
+                padding: 35px;
+
+            }
+
+
+            .main-review {
+
+                padding:
+                    35px 23px;
+
+            }
+
+
+            .main-review blockquote {
+
+                font-size: 20px;
+
+            }
+
+
+            .love-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .contact-container {
+
+                padding:
+                    25px;
+
+            }
+
+
+            .contact-action {
+
+                padding:
+                    30px 25px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+    <div class="navbar">
+
+
+        <a href="#inicio" class="navbar-logo">
+
+            <img
+                src="logo.jpg"
+                alt="Docinhos da Sandra"
+            >
+
+        </a>
+
+
+        <nav>
+
+            <a href="#sobre">
+                Sobre
+            </a>
+
+            <a href="#doces">
+                Doces
+            </a>
+
+            <a href="#avaliacoes">
+                Avaliações
+            </a>
+
+            <a href="#contato">
+                Contato
+            </a>
+
+
+            <a
+                href="https://www.instagram.com/docinhosdasandra_/"
+                target="_blank"
+                class="instagram-button"
+            >
+
+                Instagram
+
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="inicio">
+
+
+    <div class="hero-container">
+
+
+        <div class="hero-text">
+
+
+            <span>
+                Doces artesanais • Ubatuba
+            </span>
+
+
+            <h1>
+
+                Feito com
+                <br>
+
+                <em>amor</em>
+                para você.
+
+            </h1>
+
+
+            <p>
+
+                Doces preparados com carinho para transformar
+                momentos especiais em lembranças ainda mais
+                deliciosas.
+
+                Doces finos, balinhas de brigadeiro e doces gourmet
+                feitos para encantar em cada detalhe.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+
+                <a
+                    href="#doces"
+                    class="button button-primary"
+                >
+
+                    Conheça nossos doces
+
+                </a>
+
+
+                <a
+                    href="https://www.instagram.com/docinhosdasandra_/"
+                    target="_blank"
+                    class="button button-secondary"
+                >
+
+                    Ver Instagram
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="hero-logo">
+
+
+            <div class="logo-wrapper">
+
+                <img
+                    src="logo.jpg"
+                    alt="Logo Docinhos da Sandra"
+                >
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     SOBRE
+===================================================== -->
+
+<section class="about" id="sobre">
+
+
+    <div class="section-header">
+
+        <span>
+            Um pouquinho da nossa história
+        </span>
+
+        <h2>
+            Mais que doces,
+            <br>
+            momentos especiais.
+        </h2>
+
+    </div>
+
+
+
+    <div class="about-container">
+
+
+        <div class="about-highlight">
+
+
+            <h3>
+                Feito com carinho ♡
+            </h3>
+
+
+            <p>
+
+                Cada doce é preparado pensando nos pequenos
+                detalhes que fazem uma comemoração ser
+                inesquecível.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="about-text">
+
+
+            <p>
+
+                Na <strong>Docinhos da Sandra</strong>,
+                sabor, qualidade e carinho caminham juntos.
+
+            </p>
+
+
+            <p>
+
+                São doces preparados para deixar festas,
+                casamentos, chás de cozinha e outros momentos
+                ainda mais especiais.
+
+            </p>
+
+
+            <p>
+
+                Dos doces finos às balinhas de brigadeiro
+                e aos doces gourmet, cada criação recebe
+                atenção especial para que sabor e beleza
+                estejam presentes em cada detalhe.
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     DOCES
+===================================================== -->
+
+<section class="products" id="doces">
+
+
+    <div class="section-header">
+
+
+        <span>
+            Sabores que encantam
+        </span>
+
+
+        <h2>
+            Nossos doces
+        </h2>
+
+
+        <p>
+
+            Delícias preparadas com carinho, sabor e atenção
+            a cada detalhe para deixar seus momentos ainda
+            mais especiais.
+
+        </p>
+
+
+    </div>
+
+
+
+    <div class="products-grid">
+
+
+        <!-- DOCES FINOS -->
+
+        <div class="product-card">
+
+
+            <div class="product-icon">
+                ✨
+            </div>
+
+
+            <h3>
+                Doces Finos
+            </h3>
+
+
+            <p>
+
+                Delicados, sofisticados e preparados para
+                deixar sua mesa ainda mais elegante.
+
+                Perfeitos para festas, casamentos e
+                ocasiões especiais.
+
+            </p>
+
+
+        </div>
+
+
+
+        <!-- BALINHA DE BRIGADEIRO -->
+
+        <div class="product-card">
+
+
+            <div class="product-icon">
+                🍫
+            </div>
+
+
+            <h3>
+                Balinha de Brigadeiro
+            </h3>
+
+
+            <p>
+
+                Pequenos pedacinhos de carinho em forma
+                de doce.
+
+                Uma opção deliciosa para adoçar sua festa
+                e conquistar seus convidados.
+
+            </p>
+
+
+        </div>
+
+
+
+        <!-- DOCES GOURMET -->
+
+        <div class="product-card">
+
+
+            <div class="product-icon">
+                🤎
+            </div>
+
+
+            <h3>
+                Doces Gourmet
+            </h3>
+
+
+            <p>
+
+                Sabores especiais, preparo artesanal e
+                aquele toque único que transforma cada
+                doce em uma experiência.
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     DESTAQUE
+===================================================== -->
+
+<section class="special">
+
+
+    <div class="special-content">
+
+
+        <span>
+            Para sua festa
+        </span>
+
+
+        <h2>
+
+            O seu momento merece
+            um doce especial.
+
+        </h2>
+
+
+        <p>
+
+            Seja um casamento, chá de cozinha, aniversário
+            ou simplesmente uma ocasião especial, a
+            Docinhos da Sandra está pronta para adoçar
+            esse momento.
+
+        </p>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     AVALIAÇÕES
+===================================================== -->
+
+<section class="reviews" id="avaliacoes">
+
+
+    <div class="section-header">
+
+
+        <span>
+            Quem prova, recomenda
+        </span>
+
+
+        <h2>
+            Carinho que vira elogio
+        </h2>
+
+
+    </div>
+
+
+
+    <div class="rating">
+
+
+        <div class="stars">
+            ★★★★★
+        </div>
+
+
+        <span class="rating-number">
+            5,0
+        </span>
+
+
+        <span class="rating-text">
+            35 avaliações
+        </span>
+
+
+    </div>
+
+
+
+    <!-- O COMENTÁRIO -->
+
+    <div class="main-review">
+
+
+        <span class="review-label">
+            O comentário
+        </span>
+
+
+        <div class="quote">
+            “
+        </div>
+
+
+        <blockquote>
+
+            Tudo o que a Sandra faz é de excelente qualidade
+            e bom gosto. Ela capricha no sabor e nos detalhes.
+            Sabemos que existe amor em cada docinho, e ela faz
+            os bons momentos se tornarem ainda mais especiais.
+            Recomendo sem sombra de dúvidas. Com certeza,
+            são os melhores doces de Ubatuba.
+
+        </blockquote>
+
+
+        <div class="review-author">
+            Claudia Souza
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     OUTRAS FORMAS DE CARINHO
+===================================================== -->
+
+<section class="love-section">
+
+
+    <div class="section-header">
+
+
+        <span>
+            Outras formas de carinho
+        </span>
+
+
+        <h2>
+            Palavras que aquecem
+            o coração ♡
+        </h2>
+
+
+    </div>
+
+
+
+    <div class="love-grid">
+
+
+        <div class="love-card">
+
+            <p>
+                “Os melhores doces que já comi na vidaaaa!”
+            </p>
+
+        </div>
+
+
+        <div class="love-card">
+
+            <p>
+                “Melhor doce para festa na cidade e região!”
+            </p>
+
+        </div>
+
+
+        <div class="love-card">
+
+            <p>
+                “Quem já provou sabe a maravilha que é!”
+            </p>
+
+        </div>
+
+
+        <div class="love-card">
+
+            <p>
+                “Todo mundo ama.”
+            </p>
+
+        </div>
+
+
+        <div class="love-card">
+
+            <p>
+                “Ela capricha no sabor e nos detalhes.”
+            </p>
+
+        </div>
+
+
+        <div class="love-card">
+
+            <p>
+                “Uma escolha que faz os bons momentos
+                ainda mais especiais.”
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     INSTAGRAM
+===================================================== -->
+
+<section class="instagram">
+
+
+    <span class="instagram-small">
+
+        Acompanhe nosso trabalho
+
+    </span>
+
+
+    <h2>
+        @docinhosdasandra_
+    </h2>
+
+
+    <p>
+
+        Veja nossos doces, novidades e momentos especiais
+        diretamente pelo Instagram.
+
+    </p>
+
+
+    <a
+        href="https://www.instagram.com/docinhosdasandra_/"
+        target="_blank"
+        class="instagram-button-large"
+    >
+
+        📷 Seguir no Instagram
+
+    </a>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTATO
+===================================================== -->
+
+<section class="contact" id="contato">
+
+
+    <div class="section-header">
+
+
+        <span>
+            Vamos adoçar seu momento?
+        </span>
+
+
+        <h2>
+            Entre em contato
+        </h2>
+
+
+    </div>
+
+
+
+    <div class="contact-container">
+
+
+        <div class="contact-info">
+
+
+            <h2>
+                Docinhos da Sandra
+            </h2>
+
+
+            <p>
+
+                Faça seu pedido ou consulte as opções
+                disponíveis para sua festa.
+
+            </p>
+
+
+
+            <div class="contact-item">
+
+                <strong>
+                    📍 Endereço
+                </strong>
+
+                <br>
+
+                R. Santa Clara, Nº 95 - Taquaral
+
+                <br>
+
+                Ubatuba - SP
+
+            </div>
+
+
+
+            <div class="contact-item">
+
+                <strong>
+                    📞 Telefone
+                </strong>
+
+                <br>
+
+                (12) 99799-5364
+
+            </div>
+
+
+
+            <div class="contact-item">
+
+                <strong>
+                    🚚 Atendimento
+                </strong>
+
+                <br>
+
+                Compras na loja • Retirada na porta • Entrega
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="contact-action">
+
+
+            <h3>
+                Quer deixar sua festa mais doce?
+            </h3>
+
+
+            <p>
+
+                Entre em contato com a Docinhos da Sandra
+                e consulte as opções para o seu evento.
+
+            </p>
+
+
+            <a
+                href="https://wa.me/5512997995364"
+                target="_blank"
+                class="whatsapp-button"
+            >
+
+                💬 Falar pelo WhatsApp
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+    <img
+        src="logo.jpg"
+        alt="Docinhos da Sandra"
+    >
+
+
+    <h3>
+        Docinhos da Sandra
+    </h3>
+
+
+    <p>
+        Ubatuba • São Paulo
+    </p>
+
+
+    <a
+        href="https://www.instagram.com/docinhosdasandra_/"
+        target="_blank"
+        class="footer-instagram"
+    >
+
+        ♡ @docinhosdasandra_
+
+    </a>
+
+
+    <p>
+        Feito com carinho ♡
+    </p>
+
+
+</footer>
+
+
+</body>
+
+</html>
